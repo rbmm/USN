@@ -1,0 +1,112 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""winres.h\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#include "".rc2\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DIALOG2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 435
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 227
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG2 DIALOGEX 0, 0, 442, 234
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "USN records"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Show",IDOK,385,7,50,14,WS_DISABLED
+    COMBOBOX        IDC_COMBO1,7,7,309,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT2,71,32,21,14,ES_NUMBER
+    LTEXT           "MaxRecordCount:",IDC_STATIC,7,35,59,8
+    PUSHBUTTON      "Refresh",IDC_BUTTON2,328,7,50,14
+    CONTROL         "FILE_DELETE",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,336,84,58,10
+    CONTROL         "FILE_CREATE",IDC_CHECK4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,336,104,60,10
+    CONTROL         "NEW_NAME",IDC_CHECK5,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,336,124,54,10
+    CONTROL         "OLD_NAME",IDC_CHECK6,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,336,144,52,10
+    CONTROL         "STREAM_CHANGE",IDC_CHECK7,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,336,164,74,10
+    CONTROL         "INFO_CHANGE",IDC_CHECK8,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,336,64,64,10
+    CONTROL         "DATA_OVERWRITE",IDC_CHECK9,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,336,204,78,10
+    CONTROL         "DATA_TRUNCATION",IDC_CHECK10,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,336,184,82,10
+    CONTROL         "EA_CHANGE",IDC_CHECK11,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,336,44,56,10
+    GROUPBOX        "REASON",IDC_STATIC,317,26,117,201
+    CONTROL         "",IDC_DATETIMEPICKER1,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | DTS_SHOWNONE | WS_TABSTOP | 0x8,150,75,100,15
+    CONTROL         "",IDC_DATETIMEPICKER2,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_SHOWNONE | WS_TABSTOP,40,75,100,15
+    GROUPBOX        "From",IDC_STATIC,7,63,293,40
+    CONTROL         "",IDC_DATETIMEPICKER4,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_SHOWNONE | WS_TABSTOP,40,140,100,15
+    CONTROL         "",IDC_DATETIMEPICKER3,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | DTS_SHOWNONE | WS_TABSTOP | 0x8,150,140,100,15
+    GROUPBOX        "To",IDC_STATIC,7,126,294,43
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#include ".rc2"
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
